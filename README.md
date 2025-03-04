@@ -1,6 +1,9 @@
 # Smart Daily Task Reminder
 Smart Daily Task Reminder is a Java Spring Boot application that helps users schedule and receive automated reminders for essential daily activities like drinking water and stretching. Users can configure reminders based on their preferences and receive notifications via Email, Telegram, and WhatsApp (Twilio).
 
+![Features - visual selection](https://github.com/user-attachments/assets/709eab31-975e-44c9-9abb-06499cfef6d9)
+
+
 ## Features
 
 - 🕒 **Scheduled Reminders**: Drink water (every 2 hours) and stretch (every 1 hour).
