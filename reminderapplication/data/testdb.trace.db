@@ -1,0 +1,117 @@
+2025-02-24 05:52:08.149060+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER_SETTINGS" not found (this database is empty); SQL statement:
+select s1_0.id,s1_0.drink_water_interval,s1_0.email,s1_0.email_notifications,s1_0.sleep_end_time,s1_0.sleep_start_time,s1_0.stretch_interval,s1_0.telegram_notifications,s1_0.user_id,s1_0.whatsapp_notifications from user_settings s1_0 [42104-232]
+2025-02-24 05:52:38.750833+01:00 database: wrong user or password; user: "SA"
+org.h2.message.DbException: Wrong user name or password [28000-232]
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.engine.Engine.openSession(Engine.java:154)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:344)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:124)
+	at org.h2.util.JdbcUtils.getConnection(JdbcUtils.java:291)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:811)
+	at org.h2.server.web.WebApp.login(WebApp.java:1038)
+	at org.h2.server.web.WebApp.process(WebApp.java:226)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:176)
+	at org.h2.server.web.JakartaWebServlet.doGet(JakartaWebServlet.java:129)
+	at org.h2.server.web.JakartaWebServlet.doPost(JakartaWebServlet.java:166)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Wrong user name or password [28000-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:522)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 54 more
+2025-02-24 05:53:07.761913+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER_SETTINGS" not found (this database is empty); SQL statement:
+select s1_0.id,s1_0.drink_water_interval,s1_0.email,s1_0.email_notifications,s1_0.sleep_end_time,s1_0.sleep_start_time,s1_0.stretch_interval,s1_0.telegram_notifications,s1_0.user_id,s1_0.whatsapp_notifications from user_settings s1_0 [42104-232]
+2025-02-24 05:54:07.776591+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER_SETTINGS" not found (this database is empty); SQL statement:
+select s1_0.id,s1_0.drink_water_interval,s1_0.email,s1_0.email_notifications,s1_0.sleep_end_time,s1_0.sleep_start_time,s1_0.stretch_interval,s1_0.telegram_notifications,s1_0.user_id,s1_0.whatsapp_notifications from user_settings s1_0 [42104-232]
+2025-02-24 05:55:07.764334+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER_SETTINGS" not found (this database is empty); SQL statement:
+select s1_0.id,s1_0.drink_water_interval,s1_0.email,s1_0.email_notifications,s1_0.sleep_end_time,s1_0.sleep_start_time,s1_0.stretch_interval,s1_0.telegram_notifications,s1_0.user_id,s1_0.whatsapp_notifications from user_settings s1_0 [42104-232]
+2025-02-24 05:56:07.760946+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER_SETTINGS" not found (this database is empty); SQL statement:
+select s1_0.id,s1_0.drink_water_interval,s1_0.email,s1_0.email_notifications,s1_0.sleep_end_time,s1_0.sleep_start_time,s1_0.stretch_interval,s1_0.telegram_notifications,s1_0.user_id,s1_0.whatsapp_notifications from user_settings s1_0 [42104-232]
+2025-02-24 05:57:07.759178+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER_SETTINGS" not found (this database is empty); SQL statement:
+select s1_0.id,s1_0.drink_water_interval,s1_0.email,s1_0.email_notifications,s1_0.sleep_end_time,s1_0.sleep_start_time,s1_0.stretch_interval,s1_0.telegram_notifications,s1_0.user_id,s1_0.whatsapp_notifications from user_settings s1_0 [42104-232]
+2025-02-24 05:58:07.767207+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER_SETTINGS" not found (this database is empty); SQL statement:
+select s1_0.id,s1_0.drink_water_interval,s1_0.email,s1_0.email_notifications,s1_0.sleep_end_time,s1_0.sleep_start_time,s1_0.stretch_interval,s1_0.telegram_notifications,s1_0.user_id,s1_0.whatsapp_notifications from user_settings s1_0 [42104-232]
+2025-02-24 05:59:07.768805+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER_SETTINGS" not found (this database is empty); SQL statement:
+select s1_0.id,s1_0.drink_water_interval,s1_0.email,s1_0.email_notifications,s1_0.sleep_end_time,s1_0.sleep_start_time,s1_0.stretch_interval,s1_0.telegram_notifications,s1_0.user_id,s1_0.whatsapp_notifications from user_settings s1_0 [42104-232]
+2025-02-24 06:00:07.760763+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER_SETTINGS" not found (this database is empty); SQL statement:
+select s1_0.id,s1_0.drink_water_interval,s1_0.email,s1_0.email_notifications,s1_0.sleep_end_time,s1_0.sleep_start_time,s1_0.stretch_interval,s1_0.telegram_notifications,s1_0.user_id,s1_0.whatsapp_notifications from user_settings s1_0 [42104-232]
+2025-02-24 06:01:07.762604+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER_SETTINGS" not found (this database is empty); SQL statement:
+select s1_0.id,s1_0.drink_water_interval,s1_0.email,s1_0.email_notifications,s1_0.sleep_end_time,s1_0.sleep_start_time,s1_0.stretch_interval,s1_0.telegram_notifications,s1_0.user_id,s1_0.whatsapp_notifications from user_settings s1_0 [42104-232]
+2025-02-24 06:02:07.759233+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER_SETTINGS" not found (this database is empty); SQL statement:
+select s1_0.id,s1_0.drink_water_interval,s1_0.email,s1_0.email_notifications,s1_0.sleep_end_time,s1_0.sleep_start_time,s1_0.stretch_interval,s1_0.telegram_notifications,s1_0.user_id,s1_0.whatsapp_notifications from user_settings s1_0 [42104-232]
+2025-02-24 06:03:07.763863+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER_SETTINGS" not found (this database is empty); SQL statement:
+select s1_0.id,s1_0.drink_water_interval,s1_0.email,s1_0.email_notifications,s1_0.sleep_end_time,s1_0.sleep_start_time,s1_0.stretch_interval,s1_0.telegram_notifications,s1_0.user_id,s1_0.whatsapp_notifications from user_settings s1_0 [42104-232]
+2025-02-24 06:04:07.762980+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER_SETTINGS" not found (this database is empty); SQL statement:
+select s1_0.id,s1_0.drink_water_interval,s1_0.email,s1_0.email_notifications,s1_0.sleep_end_time,s1_0.sleep_start_time,s1_0.stretch_interval,s1_0.telegram_notifications,s1_0.user_id,s1_0.whatsapp_notifications from user_settings s1_0 [42104-232]
+2025-02-24 06:05:07.757637+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER_SETTINGS" not found (this database is empty); SQL statement:
+select s1_0.id,s1_0.drink_water_interval,s1_0.email,s1_0.email_notifications,s1_0.sleep_end_time,s1_0.sleep_start_time,s1_0.stretch_interval,s1_0.telegram_notifications,s1_0.user_id,s1_0.whatsapp_notifications from user_settings s1_0 [42104-232]
+2025-02-24 06:06:07.763041+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER_SETTINGS" not found (this database is empty); SQL statement:
+select s1_0.id,s1_0.drink_water_interval,s1_0.email,s1_0.email_notifications,s1_0.sleep_end_time,s1_0.sleep_start_time,s1_0.stretch_interval,s1_0.telegram_notifications,s1_0.user_id,s1_0.whatsapp_notifications from user_settings s1_0 [42104-232]
+2025-02-24 06:07:07.758302+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER_SETTINGS" not found (this database is empty); SQL statement:
+select s1_0.id,s1_0.drink_water_interval,s1_0.email,s1_0.email_notifications,s1_0.sleep_end_time,s1_0.sleep_start_time,s1_0.stretch_interval,s1_0.telegram_notifications,s1_0.user_id,s1_0.whatsapp_notifications from user_settings s1_0 [42104-232]
+2025-02-24 06:08:07.763236+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER_SETTINGS" not found (this database is empty); SQL statement:
+select s1_0.id,s1_0.drink_water_interval,s1_0.email,s1_0.email_notifications,s1_0.sleep_end_time,s1_0.sleep_start_time,s1_0.stretch_interval,s1_0.telegram_notifications,s1_0.user_id,s1_0.whatsapp_notifications from user_settings s1_0 [42104-232]
+2025-02-24 06:09:07.760975+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER_SETTINGS" not found (this database is empty); SQL statement:
+select s1_0.id,s1_0.drink_water_interval,s1_0.email,s1_0.email_notifications,s1_0.sleep_end_time,s1_0.sleep_start_time,s1_0.stretch_interval,s1_0.telegram_notifications,s1_0.user_id,s1_0.whatsapp_notifications from user_settings s1_0 [42104-232]
+2025-02-24 06:10:07.761637+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER_SETTINGS" not found (this database is empty); SQL statement:
+select s1_0.id,s1_0.drink_water_interval,s1_0.email,s1_0.email_notifications,s1_0.sleep_end_time,s1_0.sleep_start_time,s1_0.stretch_interval,s1_0.telegram_notifications,s1_0.user_id,s1_0.whatsapp_notifications from user_settings s1_0 [42104-232]
