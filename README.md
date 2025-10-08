@@ -6,15 +6,15 @@ Smart Daily Task Reminder is a Java Spring Boot application that helps users sch
 
 ## Features
 
-- 🕒 **Scheduled Reminders**: Drink water (every 2 hours) and stretch (every 1 hour).
-- 🌙 **Sleeping Hours Support**: No reminders during user-configured sleep time.
-- 📩 **Multiple Notification Methods**:
+- **Scheduled Reminders**: Drink water (every 2 hours) and stretch (every 1 hour).
+-  **Sleeping Hours Support**: No reminders during user-configured sleep time.
+-  **Multiple Notification Methods**:
   - **Email Notifications** (via Spring Mail)
   - **Telegram Bot Messages**
   - **WhatsApp Notifications** (via Twilio API)
-- 🎛 **User Configurable Settings** (via Web UI)
-- 🛠 **Database Storage**: Stores user preferences using H2 database.
-- 📜 **API Documentation**: Swagger UI for API testing.
+-  **User Configurable Settings** (via Web UI)
+-  **Database Storage**: Stores user preferences using H2 database.
+-  **API Documentation**: Swagger UI for API testing.
 
 ## Tech Stack
 
@@ -77,9 +77,9 @@ Smart Daily Task Reminder is a Java Spring Boot application that helps users sch
 
 ## Future Improvements
 
-- 📝 Add a mobile app integration.
-- 🎯 AI-based activity tracking for custom reminders.
-- 🛡 More security features (OAuth2, JWT, etc.).
+-  Add a mobile app integration.
+-  AI-based activity tracking for custom reminders.
+-  More security features (OAuth2, JWT, etc.).
 
 ## License
 
