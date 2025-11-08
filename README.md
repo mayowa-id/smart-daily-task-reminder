@@ -81,13 +81,7 @@ Smart Daily Task Reminder is a Java Spring Boot application that helps users sch
 -  AI-based activity tracking for custom reminders.
 -  More security features (OAuth2, JWT, etc.).
 
-## License
-
-This project is licensed under the MIT License.
-
 ---
-
-# API Documentation (API\_DOCS.md)
 
 ## API Reference
 
